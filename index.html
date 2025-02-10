@@ -5,34 +5,88 @@
     <meta charset="utf-8">
     <title>valentine demo</title>
     <meta name="valentine" content="for my lover's eyes only">
-    
-    
     <style>
-      img.gif{
+      /* Add styling for the links */
+      a {
+        color: red; /* Change link color to red */
+        text-decoration: none; /* Removes the underline */
+      }
+
+      .image-container {
+        position: relative; /* Container holds the position of children */
+        display: inline-block; /* Keeps image and heading inline */
+      }
+
+      .mainimg {
+        width: 100%; /* Adjust image width */
+        height: auto;
+      }
+
+      .image-container h2 {
+        position: absolute; /* Position heading on top */
+        top: 10px; /* Adjust to move the heading down */
+        left: 50%;
+        transform: translateX(-50%); /* Centers the heading horizontally */
+        color: white; /* Adjust color for visibility */
+        font-size: 2em; /* Adjust font size as needed */
+      }
+
+      .text-with-gif {
+        display: flex;
+        align-items: center; /* Aligns text and image */
+        gap: 200px; /* Space between text and gif */
+      }
+
+      .text-with-gif img {
+        width: 500px; /* Adjust size as needed */
+        height: auto;
+        align-content: right;
+        margin: none;
+      }
+
+      .text-with-gif p {
+        min-width: 250px; /* Optional: keeps text from stretching too wide */
+      }
+
+      iframe {
+        display: block; /* ensures margin works */
+        margin: auto;
+        width: 500px;
+        height: 300px;
+      }
+
+      .container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .flowers {
+        width: 300px;
+        height: auto;
       }
     </style>
-    
-    
-    
   </head>
   <body>
-  <!--THIS IS WHERE OUR CONTENT/DATA GOES --> 
-    <h1>oh my love...</h1>
-    <img src="twigs_nails.jpg" alt="singer fka twigs with long acrylic nails" class= "mainimg">
-    <div class=text-contianer">
-    <p1>
-      oh, my love <br> it's been a long, long road to get here <br> but you never said what you wanna do (no) <br> oh, my love <br> it's been a long road <br> but you never, never said if you're letting me go for sure <br> if you won't let me go, then you gotta try, hold me close <br>
-    </p1>
-    <p2>
-      i could be with anyone <br> i'm fussy like a pussy cat <br> you'rе the only one I want <br> give lovin', then you take it back <br> all the kisses, all the fun <br> i hate it when you give me half <br> never give me half <br> i, i, i, i
-    </p2>
-    <p3>
-      everybody knows that I want your love<br>why you playin', baby boy, what's up? <br> everybody knows that I want your love <br> why you playin', baby boy, what's up? <br> everybody knows that I want your love <br> everybody knows that I want your love <br> everybody knows that I want your love <br> want your love, want <a href="https://www.youtube.com/embed/3jH7dFvMmKk" target="_blank" class= "gif">your-</a> <br>
-    </p3>
-    <img src="fka.gif" alt="singer fka twigs in dark lighting covered with shining glitter">
-                                                                                          
-    <iframe width="500" height="300" src="https://www.youtube.com/embed/3jH7dFvMmKk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
-  
+    <!--THIS IS WHERE OUR CONTENT/DATA GOES --> 
+    <div class="image-container">
+      <h2>oh my love...</h2>
+      <img src="twigs_nails.jpg" alt="singer fka twigs with long acrylic nails" class="mainimg">  
+    </div>
 
+    <div class="text-with-gif">
+      <p>
+        oh, my <a href="#">love</a> <br> it's been a long, long road to get here <br> but you never said what you wanna do (no) <br> oh, my love <br> it's been a long road <br> but you never, never said if you're letting me go for sure <br> if you won't let me go, then you gotta try, hold me close <br><br>
+        i could be with anyone <br> i'm fussy like a pussy cat <br> you'rе the only one I want <br> give lovin', then you take it back <br> all the kisses, all the fun <br> i hate it when you give me half <br> never give me half <br> i, i, i, i <br><br>
+        everybody knows that I want your love<br>why you playin', baby boy, what's up? <br> everybody knows that I want your love <br> why you playin', baby boy, what's up? <br> everybody knows that I want your love <br> everybody knows that I want your love <br> everybody knows that I want your love <br> want
+      </p>
+      <img src="fka.gif" alt="singer fka twigs in dark lighting covered with shining glitter">
+    </div>
+    
+    <div class="container">
+      <img src="flowers.png" class="flowers">
+      <iframe src="https://www.youtube.com/embed/3jH7dFvMmKk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <img src="flowers.png" class="flowers">
+    </div>
   </body>
-</html>  
+</html>
